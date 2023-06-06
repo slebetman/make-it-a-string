@@ -1,0 +1,16 @@
+#! /usr/bin/env node
+
+
+async function main () {
+	const clipboard = (await import('clipboardy')).default;
+	
+	function result (x) {
+		clipboard.writeSync(x);
+		console.log(x);
+	}
+
+	let raw = clipboard.readSync();	
+	result(JSON.stringify(raw,null,4));
+}
+
+main();

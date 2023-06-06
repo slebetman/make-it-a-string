@@ -1,0 +1,18 @@
+{
+  "name": "make-it-a-string",
+  "version": "1.0.0",
+  "description": "Convert clipboard content into a string (with \n for newlines etc)",
+  "main": "make-it-a-string",
+  "bin": {
+  	"make-it-a-string": "./make-it-a-string"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":"https://github.com/slebetman/make-it-a-string",
+  "author": "slebetman@gmail.com",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "clipboardy": "^3.0.0"
+  }
+}
